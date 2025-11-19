@@ -1,69 +1,99 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   background: #f4f6f9;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 .container {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 500px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #222;
+  margin-bottom: 1rem;
 }
 
 textarea {
   width: 100%;
-  height: 150px;
-  padding: 10px;
+  height: 160px;
+  padding: 12px;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  resize: none;
+  resize: vertical;
+  font-size: 1rem;
 }
 
 button {
-  margin-top: 10px;
-  padding: 10px 15px;
+  margin-top: 12px;
+  padding: 12px;
   background: #0078d7;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
 }
 
 button:hover {
   background: #005a9e;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 #result {
-  margin-top: 15px;
-  padding: 10px;
+  margin-top: 20px;
+  padding: 15px;
   background: #f9f9f9;
   border-left: 4px solid #0078d7;
-  min-height: 50px;
+  border-radius: 6px;
+  min-height: 60px;
+  font-size: 0.95rem;
+}
+
+.success {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.info {
+  color: #555;
+}
+
+.loading {
+  color: #0078d7;
+  font-style: italic;
 }
 
 .suggestion {
   display: inline-block;
-  margin: 3px;
-  padding: 3px 6px;
+  margin: 4px;
+  padding: 6px 12px;
   background: #e0f0ff;
   border: 1px solid #0078d7;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 0.9em;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .suggestion:hover {
   background: #cce4ff;
+  transform: scale(1.05);
 }
